@@ -12,12 +12,6 @@ export default {
     placeholder: { type: String, default: '' },
     initial: { type: String, default: '' } // 👈 注意：initial 应该由 UCIInput 接收，但最好统一通过 uciForm 管理
   },
-  data() {
-    return {
-      // ❌ 删除 inputValue
-      // inputValue: ''
-    };
-  },
   computed: {
     // ✅ 核心：通过计算属性双向绑定
     inputValue: {

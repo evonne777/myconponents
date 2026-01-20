@@ -60,6 +60,7 @@ export default {
     // 提交表单
     apply() {
       this.$emit('showData', this.form);
+      console.log(this.form)
       this.$message.success('操作成功！');
     },
 

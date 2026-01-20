@@ -1,4 +1,3 @@
-// main.js
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -13,6 +12,7 @@ Vue.config.productionTip = false
 
 Vue.use(Antd)
 Vue.prototype.$http = request;
+console.log('Registered components:', Vue.options.components)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -20,3 +20,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
